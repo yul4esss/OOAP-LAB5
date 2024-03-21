@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab5_1
 {
+    // Weapon decorator
     abstract class WeaponDecorator : Weapon
     {
         public Weapon weapon;
@@ -25,6 +26,7 @@ namespace Lab5_1
         }
     }
 
+    // Accessories classes
     class Scope : WeaponDecorator
     {
         public Scope(Weapon weapon)

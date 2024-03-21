@@ -8,6 +8,7 @@ namespace Lab5_1
         {
             WeaponFacade weapon = new WeaponFacade();
 
+            // Using Facade to display program interface
             weapon.AddWeapons();
 
             weapon.ChooseAccessories();

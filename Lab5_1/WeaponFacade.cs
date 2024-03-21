@@ -8,6 +8,7 @@ namespace Lab5_1
     {
         private List<Weapon> arsenal = new List<Weapon>();
 
+        // Add weapons to the list
         public void AddWeapons()
         {
             bool flag = true;
@@ -23,6 +24,7 @@ namespace Lab5_1
             }
         }
 
+        // Creating weapon instances depending on usser's choice
         public void ChooseWeapon()
         {
             Console.Clear();
@@ -40,6 +42,7 @@ namespace Lab5_1
             }
         }
 
+        // Adding accessories for the weapon
         public void ChooseAccessories()
         {
             if (arsenal.Count > 0)
@@ -67,6 +70,7 @@ namespace Lab5_1
             }
         }
 
+        // Show all weapons descriptions with accessories and weapon's cost
         public void ShowReceipt()
         {
             if (arsenal.Count > 0)

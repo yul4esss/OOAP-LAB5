@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab5_1
 {
+    // Abstract class of weapons
     abstract class Weapon
     {
         String weapon_description = "Unknown weapon";
@@ -28,6 +29,7 @@ namespace Lab5_1
             return weapon_description;
         }
 
+        // Counting weapon's cost
         public double TotalCost()
         {
             double total = CountWeaponCost();
@@ -38,6 +40,7 @@ namespace Lab5_1
             return total;
         }
 
+        // Finding the most expensive weapon from list
         public static Weapon MostExpensive(List<Weapon> weapons)
         {
             Weapon mostExpensive = null;
@@ -54,6 +57,7 @@ namespace Lab5_1
             return mostExpensive;
         }
 
+        // Counting depreciation cost
         public virtual double DepreciatedCost(int currentYear)
         {
             double yearsOld = currentYear - YearOfManufacture;
@@ -83,6 +87,8 @@ namespace Lab5_1
 
     }
 
+
+    // Weapon classes
     class Rifle : Weapon
     {
         public Rifle()
